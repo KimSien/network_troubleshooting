@@ -10,10 +10,14 @@
 # 1 basic trouble / 基本的なトラブルの種類
 
 ## 1-1 case / ケース
-- case 1 : don't connection / vpn接続自体が出来ない場合
-- case 2 : connection ok.but not stable / vpn接続は出来るが安定していない。切れる。
+- case A : don't connection / vpn接続自体が出来ない場合
+- case B : connection ok.but not stable / vpn接続は出来るが安定していない。切れる。
 
-## 1-2 general cause / 一般的な原因
+## A-1 vpn接続自体が出来ない場合
+
+    具体的な事例：02_stock_A.md
+
+## B-1 general cause / 一般的な原因
 
 - setting miss / 設定ミス
 
@@ -25,8 +29,13 @@
 - other / その他
 
 
-## 1-3 general solution/ 一般的な解決策
+## B-2 general solution/ 一般的な解決策
+
+    具体的な事例：02_stock_B.md
+
 - router等特定の機器を使用している場合はサポートTELも有り
+router imcp check / データ分割の有効、無効チェック
+
 
 - protocol change / プロトコルを変える
 
@@ -35,6 +44,7 @@ ipseq,pptp,l2tp,ger
 - firewall
 
 - network quolity check/ ネットワーク品質、転送量等のチェック
+
 
 mtu設定を変える
 
@@ -47,6 +57,11 @@ mtu設定を変える
 暗号化を使わない
 
 切断される通信の持続、空パケットを定期的に送る。
+
+
+- インフラ業者
+
+
 
 ---------------
 

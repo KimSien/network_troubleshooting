@@ -10,8 +10,13 @@ http://biz.freebit.com/service/column/vpnbasic00.html
 ----------------------------
 # solution
 
+## Setting/MTU
 
-## MTU
+- pmtudブラックホール/　数分〜5分おきにVPNが切断されてしまう原因と解決方法
+http://geppeivpn.asia/2015/04/30/1709.html
+
+    ICMP on,off
+
 - pingでMTUサイズを調査する
 http://www.atmarkit.co.jp/ait/articles/0512/17/news017.html
 
@@ -22,6 +27,8 @@ http://www.checksite.jp/ping-mtu-windows/
 - 拠点間インターネットVPN （NAT超え）に関する整理
 http://www.checksite.jp/about-internetvpn-ipsec-over-nat/
 
+
+## change protocol?
 
 ------------
 
@@ -39,8 +46,12 @@ mtu調整が何故必要か？　
 VPNサービスの通信速度が遅い。または接続してもすぐに切れてしまいます。
 https://faq.interlink.or.jp/faq2/View/wcDisplayContent.aspx?id=199
 
+
 -------------
 ## router
+
+中国でVPNがブチブチ切れる。VPNが切断されてしまう原因について
+http://ameblo.jp/geppeivpn/entry-12100183312.html
 
 YAMAHAのRTX1200:VPN環境で閲覧できないWEBサイトの原因は、MTU...
 http://jehupc.exblog.jp/21558500/
@@ -49,6 +60,35 @@ http://jehupc.exblog.jp/21558500/
 http://jp.yamaha.com/products/network/solution/trouble_shooting/ts_router/
 
 
+ipsec 利用時
+
+VPN接続が5分程で切れてしまいます/port 開放
+http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11110412951
+
+他
+L2TP/IPSecのルータのポート開放で検索
+
+------------
+## power play / 自動接続、空パケット送信
+
+[Mac OSX] VPNが頻繁に切断されてしまう時の対処方法
+http://blog.odoruinu.net/2014/11/16/mac-osx-vpn-solution-for-problem-disconnecting-from-vpn/
+
+------------
+
+## OS/windows  
+- VPN接続で２～３分経過すると、セッションが切断される
+http://www.tegos.co.jp/blog/vpn%E6%8E%A5%E7%B6%9A%E3%81%A7%EF%BC%92%EF%BD%9E%EF%BC%93%E5%88%86%E7%B5%8C%E9%81%8E%E3%81%99%E3%82%8B%E3%81%A8%E3%80%81%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E5%88%87%E6%96%AD/
+
+- netsh補足/［Windows 7編］ネットワーク設定を標準で使ってはいけない
+http://itpro.nikkeibp.co.jp/article/COLUMN/20100824/351391/?rt=nocnt
+
+
+------------
+## aws vpn
+
+ポリシーベースの VPN を使用しているときに AWS VPN エンドポイントへの接続が不安定になる問題を解決する方法を教えてください。
+https://aws.amazon.com/jp/premiumsupport/knowledge-center/vpn-connection-instability/
 
 ------------
 ## other 
