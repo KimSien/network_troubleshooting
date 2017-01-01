@@ -28,6 +28,15 @@ http://www.checksite.jp/ping-mtu-windows/
 http://www.checksite.jp/about-internetvpn-ipsec-over-nat/
 
 
+mtu 延長戦
+
+ルーターのＭＴＵとWINDOWSのMTUの関係
+https://oshiete.goo.ne.jp/qa/7820030.html
+
+速度低下の原因と対策
+http://mroom.xii.jp/bb/mtu.html
+
+
 ## change protocol?
 
 ------------
