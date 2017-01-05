@@ -90,6 +90,9 @@ leased line,ip-vpn,internet-vpn(ip-seq,ssl),entry-vpn?
 - NetLine/ネット回線 :
 - Router/ルーター :
 - Hub/ハブ :
+
+    ※ スマホや外出先PCのから接続だと上記を除外する場合も
+
 - Line/LAN 有線・無線 :
 - PC :
 - OS :
